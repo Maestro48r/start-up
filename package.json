@@ -1,0 +1,19 @@
+{
+  "name": "start-up",
+  "version": "1.0.0",
+  "description": "radio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1 && npm run sentry:sourcemaps",
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org sergey-rm --project node index.html && sentry-cli sourcemaps upload --org sergey-rm --project node index.html"
+  },
+  "author": "Sergey Popov",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/cli": "^2.33.1",
+    "@sentry/node": "^8.26.0",
+    "@sentry/profiling-node": "^8.26.0",
+    "parcel": "^2.12.0",
+    "react": "^18.3.1"
+  }
+}
